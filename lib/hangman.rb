@@ -3,11 +3,17 @@ def random_word()
   filtered_words[rand(0..999)].strip
 end
 
-current_word = random_word
+$current_word = random_word.split('')
+puts $current_word
 
-puts current_word
-puts current_word.length
+$player_word = Array.new($current_word.length, "_")
+puts $player_word.join(' ')
 
-player_word = Array.new(current_word.length, "_").join(' ')
-#player_word[2] = "a"
-puts player_word
+def check_letter(letter)
+  $current_word.each_with_index do |x, i|
+    $player_word[i] = letter if x == letter
+  end
+  puts $player_word.join(' ')
+end
+
+check_letter('e')
