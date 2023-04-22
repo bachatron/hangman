@@ -1,8 +1,6 @@
-Dir.mkdir('save') unless Dir.exist?('save')
-filename = "save/saved_game"
+file = File.open("../hangman/save/saved_game")
+contents = file.readlines
 
-array = ["a","b","c"]
+puts contents[0]
 
-File.open(filename, 'w') do |file|
-  file.puts array
-end
+file.close
