@@ -9,3 +9,8 @@ Assignment
   5. Now implement the functionality where, at the start of any turn, instead of making a guess the player should also have the option to save the game.        Remember what you learned about serializing objects… you can serialize your game class too!
   6. When the program first loads, add in an option that allows you to open one of your saved games, which should jump you exactly back to where you were        when you saved. Play on!
  
+Game finished.
+To do:
+-Move methods to another file
+-Clean the code
+-Have the option of use more than one save file
